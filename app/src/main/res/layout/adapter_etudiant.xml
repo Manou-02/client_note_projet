@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="20dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="398dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/default_numero_etudiant"
+                android:layout_width="70dp"
+                android:layout_height="@dimen/liste_high"
+                android:gravity="center"
+                android:text="E002"
+                android:textSize="@dimen/content_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.023" />
+
+            <TextView
+                android:id="@+id/default_nom_etudiant"
+                android:layout_width="120dp"
+                android:layout_height="@dimen/liste_high"
+                android:gravity="center"
+                android:text="Numero"
+                android:textSize="@dimen/content_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.023" />
+
+            <TextView
+                android:id="@+id/default_prenom_etudiant"
+                android:layout_width="120dp"
+                android:layout_height="@dimen/liste_high"
+                android:gravity="center"
+                android:text="Numero"
+                android:textSize="@dimen/content_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.656"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.023" />
+
+            <TextView
+                android:id="@+id/default_niveau_etudiant"
+                android:layout_width="80dp"
+                android:layout_height="49dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:text="Numero"
+                android:textSize="@dimen/content_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.023" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/default_id_niveau"
+        android:layout_width="120dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        android:layout_toStartOf="@+id/default_name_niveau"
+        android:layout_toLeftOf="@+id/default_name_niveau"
+        android:gravity="center"
+        android:text="Id"
+        android:textSize="@dimen/content_text" />
+
+    <TextView
+        android:id="@+id/default_name_niveau"
+        android:layout_width="120dp"
+        android:layout_height="@dimen/liste_high"
+        android:layout_marginEnd="89dp"
+        android:layout_marginRight="89dp"
+        android:gravity="center"
+        android:text="Niveau"
+        android:textSize="@dimen/content_text" />
+
+
+
+
+</LinearLayout>

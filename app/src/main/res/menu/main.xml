@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Application">
+        <menu>
+            <item
+                android:id="@+id/menuAccueil"
+                android:title="@string/accueil"
+                android:icon="@drawable/ic_baseline_home_24"/>
+            <item
+                android:id="@+id/menuEtudiant"
+                android:title="@string/etudiant"
+                android:icon="@drawable/ic_baseline_group_24"/>
+            <item
+                android:id="@+id/menuMatiere"
+                android:title="@string/matiere"
+                android:icon="@drawable/ic_baseline_import_contacts_24"/>
+            <item
+                android:id="@+id/menuNote"
+                android:title="@string/note"
+                android:icon="@drawable/ic_baseline_fact_check_24"/>
+
+        </menu>
+    </item>
+    <item android:title="Action">
+        <menu>
+            <item
+                android:id="@+id/menuBulletin"
+                android:title="@string/bulletin"
+                android:icon="@drawable/ic_baseline_comment_24"/>
+            <item
+                android:id="@+id/menuClassement"
+                android:title="Classement"
+                android:icon="@drawable/folder"/>
+        </menu>
+    </item>
+
+</menu>

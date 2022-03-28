@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/default_etudiantNum_note"
+        android:layout_width="70dp"
+        android:layout_height="@dimen/liste_high"
+        android:text="E002"
+        android:gravity="center"
+        android:textSize="@dimen/content_text"/>
+
+    <TextView
+        android:id="@+id/default_etudiantNom_note"
+        android:layout_width="106dp"
+        android:layout_height="@dimen/liste_high"
+        android:gravity="center"
+        android:text="Nom"
+        android:textSize="@dimen/content_text" />
+
+    <TextView
+        android:id="@+id/default_etudiantMatiere_note"
+        android:layout_width="138dp"
+        android:layout_height="@dimen/liste_high"
+        android:gravity="center"
+        android:text="Matiere"
+        android:textSize="@dimen/content_text" />
+    <TextView
+        android:id="@+id/default_etudiantNote_note"
+        android:layout_width="100dp"
+        android:layout_height="@dimen/liste_high"
+        android:text="Numero"
+        android:gravity="center"
+        android:textSize="@dimen/content_text"/>
+
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">application</string>
+    <string name="theme">Gestion des notes</string>
+    <string name="accueil">Accueil</string>
+    <string name="etudiant">Etudiants</string>
+    <string name="niveau">Niveaux</string>
+    <string name="matiere">Matières</string>
+    <string name="note">Notes</string>
+    <string name="bulletin">Bulletins</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="footer">JamRock 	&#169; Copiright 2021</string>
+    <string name="annuler">Annuler</string>
+    <string name="ajouter">Ajouter</string>
+    <string name="sauvegarder">Sauvegarder</string>
+    <string name="modifier">Modifier</string>
+    <string name="supprimer">Supprimer</string>
+    <string-array name="niveau">
+        <item>L1</item>
+        <item>L2</item>
+        <item>L3</item>
+        <item>M1</item>
+        <item>M2</item>
+    </string-array>
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!-- AppBar entete -->
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <!--Fin de l' AppBar-->
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/newNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.954"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+            app:layout_constraintVertical_bias="0.974"
+            app:srcCompat="@drawable/ic_baseline_add_24"
+            android:tint="@color/white"/>
+
+        <!--Contenu-->
+
+        <LinearLayout
+            android:layout_width="397dp"
+            android:layout_height="675dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout4">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:stretchColumns="1,2,3,4">
+                <TableRow>
+                    <TextView
+                        android:layout_column="1"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="N°Et."
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_column="1"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Nom Et."
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_column="1"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Design. Mat."
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_column="1"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Note"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <ListView
+                    android:id="@+id/listeNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="675dp"
+                    android:layout_gravity="center_horizontal"/>
+
+            </TableLayout>
+
+
+
+        </LinearLayout>
+
+        <!-- Fin du contenu -->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--Le menu-->
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navigationView"
+        app:menu="@menu/main"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/activity_header"/>
+
+    <!--Fin du menu-->
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
